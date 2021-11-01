@@ -24,6 +24,20 @@ metadata:
   labels:
     account: productpage
 ---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: productpage
+  namespace: book-info
+subjects:
+- kind: ServiceAccount
+  name: bookinfo-productpage
+  namespace: book-info
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io  
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
