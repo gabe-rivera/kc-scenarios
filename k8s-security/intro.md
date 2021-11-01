@@ -4,6 +4,6 @@ In this scenario you will have access to a running Kubernetes cluster with an ap
 
 `book-info` is an example microservice application made by Istio that is meant to showcase service mesh features. This app has four different services within it:  products, details, ratings, and reviews. Each of these services handles one part of the platform.
 
-This deployment of book-info has several security issues. Do your best to identify and fix them. This scenario is meant to test your security knowledge of containers and Kubernetes.  
+This deployment of book-info has several issues. Do your best to identify and fix them. This scenario is meant to test your knowledge of K8s security and best practices.  
 
 You may download tools to help you solve the issue and feel free to Google things as you debug.
