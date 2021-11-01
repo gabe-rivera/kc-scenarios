@@ -27,7 +27,14 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Productpage",
+        "port": 30007
+      }
+    ]
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
