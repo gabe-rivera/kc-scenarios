@@ -152,3 +152,20 @@ spec:
         emptyDir: {}
       - name: tmp
         emptyDir: {}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: book-info-policy
+  namespace: book-info
+spec:
+  podSelector:
+    matchLabels:
+      app: reviews
+  policyTypes:
+    - Ingress
+  ingress:
+  - from:
+    - podSelector:
+          matchLabels:
+            app: anotherapp
