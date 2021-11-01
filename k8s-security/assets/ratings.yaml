@@ -52,4 +52,4 @@ spec:
         ports:
         - containerPort: 9080
         securityContext:
-          runAsUser: 1000
+          runAsUser: 0
